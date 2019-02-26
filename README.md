@@ -1,5 +1,3 @@
 ### Emoji to Time series
 
-Mideterm Project for Time Series Mining class
-
-Computer Engineering, Chulalongkorn University
+Mideterm project for time series mining class, Computer Engineering, Chulalongkorn University
