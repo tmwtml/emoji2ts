@@ -1,5 +1,5 @@
-Mideterm Project
+### Emoji to Time series
 
-Time Series Mining
+Mideterm Project for Time Series Mining class
 
 Computer Engineering, Chulalongkorn University
