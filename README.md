@@ -1,6 +1,6 @@
 ## Emoji Selector
 
-Mideterm project for Time series mining class, Computer Engineering, Chulalongkorn University
+Midterm project for Time series mining class, Computer Engineering, Chulalongkorn University
 
 
 ### Team member
@@ -20,9 +20,9 @@ In this part, we tried to convert original emoji images (Fig.1) into black and w
 We tried to convert black and white emoji images into time series data by measure distance between the edge of the image and the first black pixel of the row or column. We measure this around the edge of the image then join them by left, bottom, right, top edge into a time series data with a length of 2048.
 
 #### Part 3: Matching
-We calculated 15 time series data from all emoji images and collected them in a cache. When we got some input as emoji hand-drawing images. We tried to convert them into time series data by the algorithm in part 2. After that, we convert them into real emoji images by calculated DTW distances between the test image and 15 templates and selected the images that got the minimum distance. We used ‘dtaidistance’ python library to calculate DTW distance. The result will be shown a hand-drawing image, matched emoji image and time series data of both images (hand-drawing as blue, matched emoji as orange).
+We calculated 15 time series data from all emoji images and collected them in a cache. When we got some input as emoji hand-drawing images. We tried to convert them into time series data by the algorithm in part 2. After that, we convert them into real emoji images by calculated DTW distances between time series data of the test image and 15 templates and selected the emoji image of the template that got the minimum distance. We used ‘dtaidistance’ python library to calculate DTW distance. The result will be shown with a hand-drawing image, matched emoji image and time series data of both images (hand-drawing as blue, matched emoji as orange).
 
-The implementation of all part with python3 can be reached in the file emoji2ts.ipynb and all tested images are in emoji folder.
+The implementation of all part with python3 can be reached in the file emoji2ts.ipynb and all images for testing are in emoji folder.
 
 ### Usage
 We can use this concept to implement a ‘Emoji Selector’ that can select emoji from hand-drawing emoji. Users can draw their own emoji and ‘Emoji Selector’ will select the most similar real emoji images and show it to users like this.
